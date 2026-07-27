@@ -1,7 +1,26 @@
 aid: illuminem
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/illuminem.png
 name: illuminem
-description: illuminem is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: illuminem is a global sustainability platform that brings together news, expert opinion,
+  and ESG and sustainability data in a single place for professionals, investors, and organizations
+  working on the energy transition and the broader climate and sustainability agenda. It publishes
+  editorial and community-contributed "Voices" articles, curates sustainability and clean-energy news,
+  and maintains a data hub of ESG and sustainability metrics. This API Evangelist profile was surfaced
+  as a Techstars portfolio company and added to the network as an enrichment lead; the provider does
+  not currently expose a public, machine-readable developer API surface that could be discovered during
+  this pass (its web properties sit behind a bot-challenge), so this profile carries identity and
+  domain-security signals only, awaiting a documented API to deepen it.
 url: https://raw.githubusercontent.com/api-evangelist/illuminem/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Sustainability
+- ESG
+- Climate
+- Energy Transition
+- Data
+- Media
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/illuminem-domain-security.yml
 - type: Website
   url: https://illuminem.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
